@@ -1,0 +1,16 @@
+        <nb-card class="search-box">
+            <nb-card-body class="example-items-rows">
+               <h3> Search for your favourite movie! </h3>
+              <input [(ngModel)]="searchTitle" type="search" nbInput placeholder="Search">
+              <button
+                    (click)="searchMovie(searchTitle)"
+                    nbButton
+                    status="danger"
+                    class="search-btn"
+                    >
+                    Search
+                </button>
+            </nb-card-body>
+        </nb-card>
+        
+        <app-movie [moviedata]="movieList"></app-movie>

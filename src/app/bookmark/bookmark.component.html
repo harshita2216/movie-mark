@@ -1,0 +1,4 @@
+<p>{{ bookmarks.length }}</p>
+<div *ngIf="bookmarks.length != 0">
+  <li *ngFor="let bookmark of bookmarks">{{ bookmark.Title }}</li>
+</div>

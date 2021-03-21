@@ -1,0 +1,17 @@
+
+  .search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:none;
+    border: none;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  .search-btn {
+    background-color: red !important;
+    border-color: red !important;
+  }

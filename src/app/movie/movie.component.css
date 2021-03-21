@@ -1,0 +1,22 @@
+.card-component {
+    /* float: left;
+    padding: 20px; */
+    /*  */
+    padding: 20px;
+    
+}
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+
+    
+  
+}
+.mark-btn{
+
+  
+
+}
