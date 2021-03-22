@@ -1,0 +1,106 @@
+.movie-card-container {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: charcoal;
+  transition: all 0.25s ease;
+  height: 400px;
+}
+.movie-card-container:hover{
+  transform: scale3d(1.01, 1.01, 1.01);
+}
+
+nb-card-body {
+  padding: 0;
+  margin-bottom: -0.4rem;
+  border-bottom-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.movie-poster {
+  overflow: hidden;
+  padding-bottom: 3rem;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 25rem;
+  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.movie-content-container {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+}
+
+.bookmark_icon {
+  font-size: 2rem;
+  color: rgb(83, 83, 83);
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+}
+
+h5:hover {
+  color: red;
+}
+
+.movie-title {
+  color: #fff;
+}
+.title-label {
+  font-weight: 400;
+  margin: 0;
+  color: inherit;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  color: inherit;
+}
+h5 {
+  color: white;
+}
+
+.movie_year_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: inherit;
+  color: #fff;
+}
+
+span {
+  font-weight: 400;
+  color: #fff;
+}
+
+.movie-poster img:hover  {
+  transform: scale3d(1.01, 1.01, 1.01);
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  pointer-events: none;
+}
+

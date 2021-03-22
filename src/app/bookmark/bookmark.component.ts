@@ -13,6 +13,7 @@ export class BookmarkComponent implements OnInit {
     const data = JSON.parse(localStorage.getItem('bookmarks'));
     if(data !== null) {
       this.bookmarks = data;
+      console.log("Bookmarked!");
 
     }
 
