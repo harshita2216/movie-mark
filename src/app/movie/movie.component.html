@@ -8,13 +8,49 @@
  
  <!-- Bookmarks -->
 
+<!-- <div class="card-row row">
+  <div class="card-col column">
+    <div class="movie-card">
+      <nb-card (click)="getMovieDetails(movie)" *ngFor="let movie of moviedata">
+        <nb-card-body>
+          <img src="{{movie.Poster}}" alt="">
+          <h4>Movie - {{movie.Title}}</h4>
+          <p>Year - {{movie.Year}}</p>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+  </div> -->
 
-<div class="movie-card">
-  <nb-card (click)="getMovieDetails(movie)" *ngFor="let movie of moviedata">
-    <nb-card-body>
-      {{movie.Title}}
-      {{movie.Year}}
-    </nb-card-body>
-  </nb-card>
-</div>
-
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-3 col-sm-6" *ngFor="let movie of moviedata">
+        <nb-card class="movie_card_container">
+          <nb-card-body>
+            <div class="movie_poster">
+              <img src="{{ movie.Poster }}" alt="{{ movie.Title }}" />
+            </div>
+            <div class="movie_content_container">
+              <nb-icon
+                (click)="getBookmarks(movie)"
+                class="bookmark_icon"
+                nbPrefix
+                icon="bookmark"
+                pack="eva"
+              ></nb-icon>
+              <div class="movie_title">
+                <h5>{{ movie.Title }}</h5>
+              </div>
+              <div class="movie_year_container">
+                <div class="movie_year">
+                  <p class="year"><span>Year : </span> {{ movie.Year }}</p>
+                </div>
+              </div>
+            </div>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </div>
+  </div>
+  
+  

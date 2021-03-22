@@ -1,7 +1,10 @@
         <nb-card class="search-box">
             <nb-card-body class="example-items-rows">
                <h3> Search for your favourite movie! </h3>
-              <input [(ngModel)]="searchTitle" type="search" nbInput placeholder="Search">
+               <nb-form-field class="form-container">
+                <nb-icon nbPrefix icon="search-outline" pack="eva"></nb-icon>
+                <input [(ngModel)]="searchTitle" type="search" nbInput placeholder="Search">
+              </nb-form-field>
               <button
                     (click)="searchMovie(searchTitle)"
                     nbButton

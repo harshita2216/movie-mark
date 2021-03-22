@@ -1,10 +1,13 @@
-
-  .search-box{
+.search-box{
     display: flex;
     align-items: center;
     justify-content: center;
     background:none;
     border: none;
+    text-align: center;
+  }
+  .form-container {
+    display: flex;
   }
 
   h3 {
@@ -12,6 +15,7 @@
   }
 
   .search-btn {
-    background-color: red !important;
-    border-color: red !important;
+    background-color: #e50914 !important;
+    border-color: #e50914 !important;
+    margin-left: 1rem;
   }

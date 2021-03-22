@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms'
-import {NbLayoutModule , NbThemeModule , NbInputModule,NbCardModule, NbButtonModule,NbTabsetModule,NbActionsModule,NbButtonGroupModule,} from "@nebular/theme";
-
+import {NbLayoutModule , NbThemeModule , NbInputModule,NbCardModule, NbButtonModule,NbTabsetModule,NbActionsModule,NbButtonGroupModule,NbIconModule, NbFormFieldModule} from "@nebular/theme";
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 import {AppRoutingModule} from "./app-routing.module";
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { MovieComponent } from './movie/movie.component';
@@ -30,6 +30,9 @@ import { DataServices } from './services/data.services';
     FormsModule,
     NbActionsModule,
     NbButtonGroupModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbFormFieldModule
   ],
   providers: [DataServices],
   bootstrap: [AppComponent]

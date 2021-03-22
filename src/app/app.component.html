@@ -1,24 +1,24 @@
 <nb-layout>
 
   <nb-layout-header class="header">
-    <img class="logo" src="../assets/logo.png" style="padding: 10px;">
-    <div class="btn-container">
-      <a class='btn' href="/">Search</a>
-      <a class='btn' href="bookmark">Bookmarks</a>
+    <div class="header-wrapper">
+      <div class="logo-container">
+        <img class="logo" src="../assets/logo.png" style="padding: 10px;">
+      </div>
+      <div class="btn-container">
+        <a class='btn' href="/">Search</a>
+        <a class='btn' href="bookmark">Bookmarks</a>
+      </div>
     </div>
-    
-  </nb-layout-header>
+</nb-layout-header>
   
 
-  <nb-layout-column style="padding: 0!important;" class="container">
+  <nb-layout-column style="padding: 0!important;" class="body-container">
     <router-outlet></router-outlet>
-
-
-
   </nb-layout-column>
 
   <nb-layout-footer class="footer" style="padding: 0 !important;">
-    <p>MovieMark | Copyright | 2021</p>
+    <p>Harshita | Copyright | 2021 | <a href="https://github.com/harshita2216/movie-mark">Github</a></p>
     
   </nb-layout-footer>
 
