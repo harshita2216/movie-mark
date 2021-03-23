@@ -1,5 +1,14 @@
 # MovieMark
 
+## About
+⭐ A website that bookmarks your favourite movies. <br/>
+⭐ Stores bookmarked movies in Local Storage. <br/>
+⭐ Built using Angular 11 and Nebular UI Library. <br/>
+⭐ Hosted on Firebase - https://moviemark-harshita.web.app/ <br/>
+⭐ UI inspired by Netflix. <br/>
+
+<hr/>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
 ## Development server
