@@ -4,7 +4,7 @@
                <div class="search-container">
                <nb-form-field class="form-container">
                 <nb-icon nbPrefix icon="search-outline" pack="eva"></nb-icon>
-                <input [(ngModel)]="searchTitle" type="search" nbInput placeholder="Search">
+                <input [(ngModel)]="searchTitle" type="search" nbInput placeholder="Search" (keydown.enter)="searchMovie(searchTitle)">
               </nb-form-field>
               <button
                     (click)="searchMovie(searchTitle)"

@@ -18,6 +18,15 @@ export class BookmarkComponent implements OnInit {
     }
 
   }
+  removeBookmarks(title){
+    for(let i=0;i<this.bookmarks.length;i++){
+      if(this.bookmarks[i] === title){
+        this.bookmarks.splice(i,1);
+        localStorage.setItem('bookmarks',JSON.stringify(this.bookmarks));
+        return;
+      }
+    }
+  }
 
   constructor() { }
 

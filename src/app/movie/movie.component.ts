@@ -10,6 +10,7 @@ import { DataServices } from "../services/data.services";
 export class MovieComponent implements OnInit {
   movies = [];
   bookmarks = [];
+  selected = 0;
 
     constructor(private dataService : DataServices) { }
  

@@ -9,6 +9,14 @@
               <img src="{{ movie.Poster }}" alt="{{ movie.Title }}" />
             </div>
             <div class="movie-content-container">
+              <nb-icon
+                (click)="removeBookmarks(movie)"
+                class="bookmark_icon"
+                nbPrefix
+                icon="bookmark"
+                pack="eva"
+                style="color: red;"
+              ></nb-icon>
               <div class="movie-title">
                 <h5>{{ movie.Title }}</h5>
               </div>
