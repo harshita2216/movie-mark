@@ -10,12 +10,12 @@ import { DataServices } from "../services/data.services";
 export class MovieComponent implements OnInit {
   movies = [];
   bookmarks = [];
-  selected = 0;
 
     constructor(private dataService : DataServices) { }
  
     getMovieDetails(movie){
       const getBookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+      movie.active = !movie.active;
       let foundAtPos = -1;
 
       if(getBookmarks == null){

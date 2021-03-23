@@ -107,3 +107,7 @@ h3 {
   color: white;
   pointer-events: none;
 }
+
+.active{
+  color:red !important;
+}
